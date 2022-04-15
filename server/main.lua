@@ -61,6 +61,7 @@ AddEventHandler('es:playerLoaded', function(source, _player)
 							count = v.count,
 							label = item.label,
 							weight = item.weight,
+                            limit = item.limit,
 							usable = ESX.UsableItemsCallbacks[v.item] ~= nil,
 							rare = item.rare,
 							canRemove = item.canRemove
@@ -77,6 +78,7 @@ AddEventHandler('es:playerLoaded', function(source, _player)
 							count = 0,
 							label = item.label,
 							weight = item.weight,
+							limit = item.limit,
 							usable = ESX.UsableItemsCallbacks[itemName] ~= nil,
 							rare = item.rare,
 							canRemove = item.canRemove
